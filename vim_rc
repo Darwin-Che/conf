@@ -1,0 +1,50 @@
+set autoindent
+set cindent
+
+"set hidden
+syntax on
+set number
+set scrolloff=7
+
+"map <Esc>[1;9D :m+1<CR>
+"map º :m-2<CR>
+
+"nnoremap <leader>n :NERDTreeFocus<CR>
+"nnoremap <C-n> :NERDTree<CR>
+"nnoremap <C-y> :NERDTreeToggle<CR>
+"nnoremap <C-f> :NERDTreeFind<CR>
+:command Cp %w !pbcopy 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""
+"" from no_plugin tutorial
+"" https://github.com/changemewtf/no_plugins
+set nocompatible
+
+syntax enable
+filetype plugin on
+
+"" finding files
+set path+=**
+set wildmenu
+
+"" tags
+command! MakeTags !ctags -R .
+" - Use ^] to jump to tag under cursor
+"   " - Use g^] for ambiguous tags
+"   " - Use ^t to jump back up the tag stack
+
+"" Auto Complete
+" HIGHLIGHTS:
+" " - ^x^n for JUST this file
+" " - ^x^f for filenames (works with our path trick!)
+" " - ^x^] for tags only
+" " - ^n for anything specified by the 'complete' option
+"
+" " NOW WE CAN:
+" " - Use ^n and ^p to go back and forth in the suggestion list
+
+"" File Browser
+
+

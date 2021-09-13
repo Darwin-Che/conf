@@ -1,0 +1,28 @@
+ucs='z4che@linux.student.cs.uwaterloo.ca'
+dbcs='z4che@ubuntu2004-002.student.cs.uwaterloo.ca'
+cs008='z4che@ubuntu2004-008.student.cs.uwaterloo.ca'
+
+alias g++14='g++ --std=c++14 -g -Wall'
+alias mysqlroot='mysql -u root -p'
+alias mysql348='mysql -h burst.srv.vepta.org --port=13306 -u 348proj -p --local-infile=1 MovieList'
+alias rm='rm -iR'
+
+export PS1="\u:\w $ "
+
+# start the shadowsocks local
+
+# pushd ~/.shadowsocks
+# ss-local -c ss.conf -d start & 
+# popd
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+# Set colors to match iTerm2 Terminal Colors
+# export TERM=xterm-256color
+
+. "$HOME/.cargo/env"
+
+
+
