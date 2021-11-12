@@ -7,7 +7,9 @@ alias mysqlroot='mysql -u root -p'
 alias mysql348='mysql -h burst.srv.vepta.org --port=13306 -u 348proj -p --local-infile=1 MovieList'
 alias rm='rm -iR'
 alias grep='grep -rin'
-
+if [[ $(uname) = 'Linux' ]] ; then
+alias lstemp='cat /sys/class/thermal/thermal_zone*/temp'
+fi
 
 export PS1="\u:\w $ "
 
