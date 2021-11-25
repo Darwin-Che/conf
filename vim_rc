@@ -14,7 +14,8 @@ set scrolloff=7
 "nnoremap <C-y> :NERDTreeToggle<CR>
 "nnoremap <C-f> :NERDTreeFind<CR>
 :command Cp %w !pbcopy 
-
+ 
+set background=dark
 
 """"""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""
