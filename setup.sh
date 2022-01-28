@@ -24,8 +24,9 @@ SCRIPT="${SCRIPT_DIR}/vim_rc"
 addf "${HOME}/.vimrc" ":if filereadable(expand(\"${SCRIPT}\")) \n\t:source ${SCRIPT}\n:endif" 
 
 ### bashrc
-SCRIPT="${SCRIPT_DIR}/bash_rc"
+SCRIPT="${SCRIPT_DIR}/sh_rc"
 addf "${HOME}/.bashrc" "if [[ -f ${SCRIPT} ]]; then \n\t source ${SCRIPT} \nfi"
+addf "${HOME}/.zshrc" "if [[ -f ${SCRIPT} ]]; then \n\t source ${SCRIPT} \nfi"
 
 
 

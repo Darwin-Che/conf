@@ -2,9 +2,6 @@ ucs='z4che@linux.student.cs.uwaterloo.ca'
 dbcs='z4che@ubuntu2004-002.student.cs.uwaterloo.ca'
 cs008='z4che@ubuntu2004-008.student.cs.uwaterloo.ca'
 
-alias g++14='g++ --std=c++14 -g -Wall'
-alias mysqlroot='mysql -u root -p'
-alias mysql348='mysql -h burst.srv.vepta.org --port=13306 -u 348proj -p --local-infile=1 MovieList'
 alias rm='rm -iR'
 if [[ $(uname) = 'Linux' ]] ; then
 alias lstemp='cat /sys/class/thermal/thermal_zone*/temp'
@@ -22,8 +19,6 @@ export PS1="\u:\w $ "
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
-# Set colors to match iTerm2 Terminal Colors
-# export TERM=xterm-256color
 
 
 
