@@ -1,15 +1,15 @@
 "" -- https://levelup.gitconnected.com/tweak-your-vim-as-a-powerful-ide-fcea5f7eff9c --
 
 syntax on
-set modeline
-set expandtab
-set tabstop=4
-set shiftwidth=4
+" set modeline
+" set expandtab
+set tabstop=3
+" set shiftwidth=4
 set exrc " .vimrc in local project dir
 set secure
 " autocmd BufRead,BufNewFile * set signcolumn=yes
 " autocmd FileType tagbar,nerdtree set signcolumn=no
-set foldmethod=indent
+" set foldmethod=indent
 set nofoldenable
 " set number relativenumber
 set number
