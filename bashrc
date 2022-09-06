@@ -7,7 +7,13 @@ if [[ $(uname) = 'Linux' ]] ; then
 alias lstemp='cat /sys/class/thermal/thermal_zone*/temp'
 fi
 
-export PS1="\u:\w $ "
+SHELLNAME=$(basename ${SHELL})
+
+if [[ ${SHELLNAME} = 'zsh' ]]; then
+	export PS1="%n:%~ %# "
+elif [[ ${SHELLNAME} = 'bash' ]]; then
+	export PS1="\u:\w $ "
+fi
 
 # start the shadowsocks local
 

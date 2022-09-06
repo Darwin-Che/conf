@@ -20,12 +20,15 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 
 
 ### vimrc
-SCRIPT="${SCRIPT_DIR}/vim_rc"
+SCRIPT="${SCRIPT_DIR}/vimrc"
 addf "${HOME}/.vimrc" ":if filereadable(expand(\"${SCRIPT}\")) \n\t:source ${SCRIPT}\n:endif" 
 
 ### bashrc
-SCRIPT="${SCRIPT_DIR}/sh_rc"
+SCRIPT="${SCRIPT_DIR}/bashrc"
 addf "${HOME}/.bashrc" "if [[ -f ${SCRIPT} ]]; then \n\t source ${SCRIPT} \nfi"
+
+### zshrc
+SCRIPT="${SCRIPT_DIR}/bashrc"
 addf "${HOME}/.zshrc" "if [[ -f ${SCRIPT} ]]; then \n\t source ${SCRIPT} \nfi"
 
 
