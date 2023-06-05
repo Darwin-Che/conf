@@ -15,7 +15,7 @@ if [[ ${SHELLNAME} = 'zsh' ]]; then
 	NL=$'\n'
 	export PS1="${NL}%~${NL}%n %# "
 elif [[ ${SHELLNAME} = 'bash' ]]; then
-	export PS1="\u:\w $ "
+	export PS1="\n\w\n\u # "
 fi
 
 # start the shadowsocks local

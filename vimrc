@@ -3,8 +3,8 @@
 syntax on
 " set modeline
 " set expandtab
-set tabstop=3
-" set shiftwidth=4
+set tabstop=4
+set shiftwidth=4
 set exrc " .vimrc in local project dir
 set secure
 " autocmd BufRead,BufNewFile * set signcolumn=yes
@@ -93,8 +93,8 @@ endif
 "" https://github.com/changemewtf/no_plugins
 set nocompatible
 
+filetype plugin indent on
 syntax enable
-filetype plugin on
 
 "" finding files
 set path+=**
