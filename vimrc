@@ -5,6 +5,7 @@ syntax on
 " set expandtab
 set tabstop=4
 set shiftwidth=4
+set scrolloff=8
 set exrc " .vimrc in local project dir
 set secure
 " autocmd BufRead,BufNewFile * set signcolumn=yes

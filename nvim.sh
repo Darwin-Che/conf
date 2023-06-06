@@ -22,6 +22,14 @@ NVIM_CONF_DIR="${SCRIPT_DIR}/nvim"
 if [[ ! -d "$NVIM_CONF_DIR" ]]; then
 	mkdir -p "$NVIM_CONF_DIR"
 	git clone https://github.com/NvChad/NvChad "$NVIM_CONF_DIR" --depth 1
+else
+  echo "NvChad already installed"
+fi
+
+if [[ ! -h "nvim/lua/custom" ]]; then
+  ln -s ../../nvchad-custom/ nvim/lua/custom
+else
+  echo "NvChad Custom SymLink already installed"
 fi
 
 mkdir -p ~/.config
